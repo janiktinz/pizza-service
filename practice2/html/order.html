@@ -1,0 +1,46 @@
+<!-- author Patrick and Janik-->
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <meta charset="UTF-8" /> 
+        <title>Bestellung</title> 
+    </head>     
+    <body>
+        <h1>Bestellung</h1>
+    
+        <p>
+            <img src="../images/pizza-margherita.png" data-price="4.00" width="250" height="250" alt="Margherita Pizza" title="Margherita Pizza" />
+            <br />
+            Margherita 4,00 €
+        </p>
+             
+        <p>
+            <img src="../images/pizza-margherita.png" data-price="4.50" width="250" height="250" alt="Salami Pizza" title="Salami Pizza" />     
+            <br />
+            Salami 4,50 €
+        </p>
+       
+        <p>
+            <img src="../images/pizza-margherita.png" data-price="5.50" width="250" height="250" alt="Hawaii Pizza" title="Hawaii Pizza" />
+            <br />
+            Hawaii 5,50 €
+        </p>
+        
+        <select name="top4[]" size="7" multiple>
+            <option>test</option>  
+        </select>
+        
+        <br />
+        14,00 €
+        <br />
+        
+        <form action="https://www.fbi.h-da.de/cgi-bin/Echo.pl" id="baker_form2" accept-charset="UTF-8" method="get">
+            <input type="text" value="" size="30" maxlength="40" placeholder="Ihre Eingabe" />
+            <br />
+            <input type="reset" name="alle löschen" value="Alle Löschen" />
+            <input type="reset" name="auswahl löschen" value="Auswahl Löschen" />
+            <input type="submit" name="bestellen" value="Bestellen" />
+        </form> 
+        
+    </body> 
+</html>
