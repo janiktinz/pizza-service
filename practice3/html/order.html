@@ -1,0 +1,52 @@
+<!-- author Patrick and Janik -->
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <meta charset="UTF-8" /> 
+        <title>Bestellung</title> 
+        <link rel="stylesheet" media="screen" href="../css/style-sheet.css" />
+        <script src="../js/order.js"></script>
+    </head>     
+    <body>
+        <img id=main_image src="../images/pizza.jpg" alt="Pizza" title="Pizza" />
+        <h1>Bestellung</h1>
+        
+        <div class=order_box_order>
+            
+            <img src="../images/pizza-margherita.png" id="margherita" class="pizza_image" data-price="4.00" name="Margherita" alt="Margherita Pizza" title="Margherita Pizza" onclick="cart.addPizza('margherita')"/>
+            <p class="pizza_label">
+            Margherita 4,00 €
+            </p>
+
+            
+            <img src="../images/pizza-margherita.png" id="salami" class="pizza_image" data-price="4.50" name="Salami" alt="Salami Pizza" title="Salami Pizza" onclick="cart.addPizza('salami')" /> 
+            <p class="pizza_label">       
+            Salami 4,50 €
+            </p>
+
+            
+            <img src="../images/pizza-margherita.png" id="hawaii" class="pizza_image" data-price="5.50" name="Hawaii" alt="Hawaii Pizza" title="Hawaii Pizza" onclick="cart.addPizza('hawaii')"/>
+            <p class="pizza_label">  
+            Hawaii 5,50 €
+            </p>
+            
+        </div>
+        
+        <div class="cart">
+            <form action="https://www.fbi.h-da.de/cgi-bin/Echo.pl" id="order_form" accept-charset="UTF-8" onsubmit="return cart.submit()" method="get">
+                <select name="orders[]" id="orders" multiple size="8"></select>
+
+                <p>
+                    <span id="sum">0,00</span> €
+                </p>
+                
+                <input id="address" type="text" name="address" value="" size="30" maxlength="70" placeholder="Name, PLZ, Ort, Straße + Hausnummer" />
+                <input id="delete-all" type="reset" name="delete-all" value="Alle Löschen" onclick="cart.reset()"/>
+                <input id="delete-selected" type="reset" name="delete-selected" value="Auswahl Löschen" onclick="cart.removePizza()"/>
+                <input id="order" type="submit" />
+            </form>
+        </div>
+        
+      <footer>Pizza Service</footer>  
+    </body> 
+</html>

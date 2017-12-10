@@ -1,0 +1,70 @@
+<!-- author Patrick and Janik -->
+<!DOCTYPE html>
+ <html> 
+     <head> 
+         <meta charset="UTF-8" /> 
+         <title>Bäcker</title> 
+         <link rel="stylesheet" media="screen" href="../css/style-sheet.css" />
+    </head> 
+    <body>
+        
+        <h1>Bäcker</h1>
+              
+        <div class=order_box_baker>
+            <div class="header_table">
+                <span class="label_table_span">
+                <p class="label_table">bestellt</p>
+                <p class="label_table">im Ofen</p> 
+                <p class="label_table">fertig</p>
+                </span>
+            </div>
+            
+            <form action="https://www.fbi.h-da.de/cgi-bin/Echo.pl" id="baker_form1" accept-charset="UTF-8" method="get">
+                <p class="pizza_name">
+                    Margherita
+                </p>
+                
+                <div class="pizza_status">
+                    
+                    <input class="status_button" type="radio" name="1" onclick="document.forms['baker_form1'].submit();" checked />
+                    <input class="status_button" type="radio" name="1" onclick="document.forms['baker_form1'].submit();" />
+                    <input class="status_button" type="radio" name="1" onclick="document.forms['baker_form1'].submit();" />
+                
+                </div>
+                
+            </form>
+        
+            <form action="https://www.fbi.h-da.de/cgi-bin/Echo.pl" id="baker_form2" accept-charset="UTF-8" method="get">
+                <p class="pizza_name">
+                    Margherita
+                </p>
+                
+                <div class="pizza_status">
+                    
+                    <input class="status_button" type="radio" name="2" onclick="document.forms['baker_form2'].submit();" checked />
+                    <input class="status_button" type="radio" name="2" onclick="document.forms['baker_form2'].submit();" />
+                    <input class="status_button" type="radio" name="2" onclick="document.forms['baker_form2'].submit();" />
+                
+                </div>
+                
+            </form>
+        
+            <form action="https://www.fbi.h-da.de/cgi-bin/Echo.pl" id="baker_form3" accept-charset="UTF-8" method="get">
+                <p class="pizza_name">
+                    Hawaii
+                </p>
+                
+                <div class="pizza_status">
+                    
+                    <input class="status_button" type="radio" name="3" onclick="document.forms['baker_form3'].submit();" checked />
+                    <input class="status_button" type="radio" name="3" onclick="document.forms['baker_form3'].submit();" />
+                    <input class="status_button" type="radio" name="3" onclick="document.forms['baker_form3'].submit();" />
+                
+                </div>
+                
+            </form>
+        </div>
+        
+        <footer>Pizza Service</footer>
+    </body> 
+</html>
